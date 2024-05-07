@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab70aa5546.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Port<span>folio.</span></h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li> 
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Engineer</p>
+                <h1>Hi, I'm <span>Darlene</span><br>How may I be of service?</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> As a student pursuing a Bachelor's in Business Information Technology, I am a passionate full-stack engineer with a strong foundation in Python, JavaScript, HTML, CSS, Flask, Django, and emerging Web3 technologies. With a keen interest in cutting-edge solutions, I am continuously expanding my skills to provide innovative services tailored to meet clients' unique needs. Driven by a love for learning, I am eager to embrace new challenges and stay ahead of the curve. My diverse skillset, combined with a business-focused mindset, allows me to deliver robust and efficient solutions that drive growth and success for organizations.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Full-stack web development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Database</span><br>Database management</li>
+                            <li><span>Version Control </span><br>Git</li>
+                            <li><span>API design</span><br>API design and development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Junior developer at Greatest Interactive</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - current</span><br>Bachelor of Business Information Technology(MMU)</li>
+                            <li><span>2023</span><br>CISSP Certification</li>
+                            <li><span>2023</span><br>Data Analytics Certification</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services-------- --->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I offer comprehensive web development services, leveraging my expertise in Python, JavaScript, HTML, CSS, and modern frameworks. From sleek and responsive websites to robust web applications, I craft tailored solutions that align with your business goals and deliver an exceptional user experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>With a keen eye for aesthetics and usability, I craft captivating user interfaces and seamless user experiences. Blending intuitive design principles with a deep understanding of user behavior, I create engaging digital products that not only delight but also drive conversions and customer satisfaction.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>QA</h2>
+                    <p>Committed to delivering flawless software, I provide comprehensive quality assurance services. Through rigorous testing methodologies, attention to detail, and a deep understanding of industry best practices, I ensure your applications meet the highest standards of reliability, functionality, and performance.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-git"></i>
+                    <h2>Version Control</h2>
+                    <p>Effective version control is crucial for collaborative software development. I leverage industry-standard tools like Git to streamline workflows, manage code changes, facilitate code reviews, and ensure seamless integration of contributions from multiple team members, enabling efficient and organized project management.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div> 
+                    <i class="fa-light fa-gears"></i>
+                    <h2>API Design and Development</h2>
+                    <p>I specialize in crafting robust and scalable APIs that power modern applications. Leveraging best practices in API design, documentation, and security, I develop reliable interfaces that enable seamless data exchange and integration between diverse systems, enhancing interoperability and unlocking new business opportunities.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------portfolio ------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png"/>
+                <div class="layer">
+                    <h3>E-commerce site</h3>
+                    <p>Unlock new growth opportunities with this feature-rich e-commerce platform, offering a seamless shopping experience, robust inventory management, and secure payment integration.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png"/>
+                <div class="layer">
+                    <h3>Password Generator</h3>
+                    <p>Unlock robust security with this user-friendly password generator, creating virtually unbreakable passwords tailored to your preferences.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png"/>
+                <div class="layer">
+                    <h3>DApp</h3>
+                    <p>Revolutionize industries with this decentralized app, ensuring transparency, security, and trustless operations through blockchain technology.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>darlenebridgete4@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+254113232734</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/darlene-bridgete-0b8861236"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <a href="images/Darlene CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Darlene.</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)  {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNYcy16rO5gM4LTc2yZqgD4FvORt46ZA3Lj2MMJeAmYKa1jUXqOkqcDKZUhj1N7vhO-g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message submitted"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>   

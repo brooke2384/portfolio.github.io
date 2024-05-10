@@ -16,8 +16,12 @@ html {
 }
 .container {
     padding: 10px 10%;
-
 }
+body {
+    background: #ad9a9ae5;
+    color: #fac6c6e5;
+}
+
 nav{
     display: flex;
     align-items: center;

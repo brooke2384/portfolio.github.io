@@ -1,106 +1,160 @@
-/*--------portfolio--------*/
+/*-------- General Reset and Styling --------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1a; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for contrast */
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------- Header Styling --------*/
+header {
+    background-color: #333; /* Dark header background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #e0e0e0; /* Light color for the header text */
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #e0e0e0; /* Light color for navigation links */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff004f; /* Highlight color for active and hovered links */
+}
+
+/*-------- Portfolio Section Styling --------*/
 #portfolio {
     padding: 50px 0;
-    background-color: #f4f4f4; /* Light background for the portfolio section */
+    background-color: #1a1a1a; /* Blackish background for portfolio section */
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .sub-title {
+    font-size: 36px;
+    color: #e0e0e0;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 40px;
 }
 
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    gap: 30px;
 }
 
 .work {
-    border-radius: 20px;
     position: relative;
+    border-radius: 10px;
     overflow: hidden;
-    background-color: #fff; /* White background for each work item */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: #333; /* Background for each work item */
+    color: #e0e0e0;
 }
 
-.work img {
+.project-img {
     width: 100%;
-    border-radius: 20px;
-    display: block;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease;
+}
+
+.work:hover .project-img {
+    transform: scale(1.05);
 }
 
 .layer {
     width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
-    border-radius: 10px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 0;
-    overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centered content */
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     padding: 20px;
     text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-    color: #e0dada;
+}
+
+.work:hover .layer {
+    opacity: 1;
 }
 
 .layer h3 {
-    font-weight: 500;
-    margin-bottom: 15px; /* Adjusted margin */
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .layer p {
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 .buttons {
-    display: flex; /* Flexbox for horizontal alignment */
-    gap: 10px; /* Spacing between buttons */
+    display: flex;
+    gap: 10px;
 }
 
-.layer a.button {
-    display: inline-flex; /* Aligns icon and text properly */
-    align-items: center;  /* Centers content vertically */
-    color: #fff;
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff004f;
+    color: #e0e0e0;
     text-decoration: none;
-    font-size: 16px; /* Slightly larger font size */
-    line-height: 50px; /* Adjusted line-height */
-    background: #ff004f;
-    border-radius: 20px;
-    padding: 10px 20px; /* Adjusted padding */
-    transition: background 0.3s, color 0.3s; /* Smooth transition */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.layer a.button i {
-    margin-right: 8px; /* Space between icon and text */
+.button i {
+    margin-right: 5px;
 }
 
-.layer a.button:hover {
-    background: #d7004d; /* Slightly darker shade on hover */
+.button:hover {
+    background-color: #e6003c;
+    transform: scale(1.05);
 }
 
+/*-------- Footer Styling --------*/
 footer {
-    background-color: #fff; /* Footer background color */
-    padding: 20px 0; /* Padding for footer */
-    text-align: center; /* Centered text */
-    border-top: 2px solid #ff004f; /* Top border */
-    color: #333; /* Text color */
+    background-color: #333;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 footer p {
-    margin: 0; /* Remove margin */
-    font-size: 0.9em; /* Font size for footer text */
+    margin: 0;
+    font-size: 14px;
 }

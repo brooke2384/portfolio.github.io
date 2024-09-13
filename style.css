@@ -100,12 +100,14 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #462727;
 }
+
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
     font-weight: bolder;
     font-style: italic;
 }
+
 .tab-links {
     margin-right: 50px;
     font-size: 18px;
@@ -130,6 +132,7 @@ nav ul li a:hover::after{
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    font-weight: 500;
 }
 .tab-contents ul li span {
     color: #ff004f;
@@ -278,7 +281,8 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: aliceblue;
     background: transparent; /* Ensure the button background is initially transparent */
-    transition: background 0.5s, color 0.5s; /* Smooth transition for background and text color */
+    transition: background 0.5s, color 0.5s; 
+    background-color: #ff004f;/* Smooth transition for background and text color */
 }
 
 .btn i {
@@ -286,7 +290,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover {
-    background: #df2459;
+    background: #a0586d;
     color: #fff; /* Ensures text color contrasts with background on hover */
 }
 
@@ -330,6 +334,8 @@ nav ul li a:hover::after{
 .btn.btn2 {
     display: inline-block;
     background: #ff004f;
+
+    
 }
 .btn.btn2:hover{
     background-color: #755a63;

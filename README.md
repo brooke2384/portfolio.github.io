@@ -68,10 +68,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, feel free to reach out to me at:
+If you have any questions or feedback, please feel free to reach out:
 
-- **Email:** (mailto:darlenebridgete4@gmail.com)
-- **LinkedIn:** (https://www.linkedin.com/in/darlene-b-0b8861236/)
+- **Email:** [darlenebridgete4@gmail.com](mailto:darlenebridgete4@gmail.com)
+- **LinkedIn:** [Darlene Brooke](https://www.linkedin.com/in/darlene-b-0b8861236/)
 
 
 

@@ -219,9 +219,9 @@ nav ul li a:hover::after{
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center; /* Aligns content horizontally */
+    justify-content: center; 
     flex-direction: column;
-    padding: 0 20px; /* Adjusted for better spacing */
+    padding: 0 20px; 
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
@@ -234,32 +234,32 @@ nav ul li a:hover::after{
 }
 
 .layer p {
-    margin-bottom: 20px; /* Ensures there's space between paragraph and buttons */
+    margin-bottom: 20px; 
 }
 
 .layer a {
-    display: inline-flex; /* Aligns icon and text properly */
-    align-items: center; /* Centers content vertically */
-    margin: 5px; /* Space between buttons */
+    display: inline-flex; 
+    align-items: center;
+    margin: 5px; 
     color: #fff;
     text-decoration: none;
-    font-size: 14px; /* Adjust font size to fit within the button */
-    line-height: 40px; /* Ensures text is vertically centered */
-    background: #886771; /* Background color for the buttons */
-    padding: 10px 20px; /* Padding to make the button a rectangle */
-    border-radius: 5px; /* Slightly rounded corners for a rectangular look */
-    transition: background 0.5s, color 0.5s; /* Smooth transition for background and text color */
+    font-size: 14px; 
+    line-height: 40px; 
+    background: #886771; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.5s, color 0.5s;
 }
 
 .layer a:hover {
-    background: #615659; /* Darker shade on hover */
+    background: #615659; 
 }
 
 .layer .button-container {
     display: flex;
-    justify-content: center; /* Centers the button group horizontally */
-    gap: 10px; /* Space between buttons */
-    margin-top: 20px; /* Space between project description and buttons */
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px; 
 }
 
 .work:hover img {
@@ -270,9 +270,10 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
+
 .btn {
-    display: inline-flex; /* Aligns icon and text properly */
-    align-items: center; /* Centers content vertically */
+    display: inline-flex; 
+    align-items: center; 
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #df2459;
@@ -280,23 +281,23 @@ nav ul li a:hover::after{
     border-radius: 20px;
     text-decoration: none;
     color: aliceblue;
-    background: transparent; /* Ensure the button background is initially transparent */
+    background: transparent; 
     transition: background 0.5s, color 0.5s; 
-    background-color: #ff004f;/* Smooth transition for background and text color */
+    background-color: #ff004f;
 }
 
 .btn i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px; 
 }
 
 .btn:hover {
     background: #a0586d;
-    color: #fff; /* Ensures text color contrasts with background on hover */
+    color: #fff; 
 }
 
 #portfolio-more {
     margin-top: 50px;
-    /* Add additional styling if needed */
+    
 }
 
 
@@ -464,6 +465,9 @@ nav .fas {
     }
     .work img{
         transition: transform 0.3s;
+    }
+    .work {
+        padding: 10px; 
     }
     .contact-left, .contact-right {
         flex-basis: 100%;

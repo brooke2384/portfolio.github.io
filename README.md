@@ -9,7 +9,7 @@ This portfolio showcases my projects and skills as a software engineer. Each pro
 ## Projects
 
 ### Azteck Restaurant Site
-![Azteck Restaurant Site](images/work-1.jpg)
+<img src="images/work-1.jpg" alt="Azteck Restaurant Site" width="300"/>
 
 **Description:** Experience a seamless dining journey with our restaurant platform, offering online reservations, secure payments, and real-time order tracking for dine-in, takeout, or delivery. Work in progress, focused on convenience and efficiency from menu browsing to delivery.
 
@@ -25,7 +25,7 @@ This portfolio showcases my projects and skills as a software engineer. Each pro
 ---
 
 ### Weather App
-![Weather App](images/work-2.jpg)
+<img src="images/work-2.jpg" alt="Weather App" width="300"/>
 
 **Description:** Check out my weather dashboard built with React.js and the OpenWeather API. It offers real-time weather updates, forecasts, and a responsive design for a smooth user experience.
 
@@ -40,7 +40,7 @@ This portfolio showcases my projects and skills as a software engineer. Each pro
 ---
 
 ### Vanilla JS Calculator
-![Vanilla JS Calculator](images/work-3.jpg)
+<img src="images/work-3.jpg" alt="Vanilla JS Calculator" width="300"/>
 
 **Description:** This simple calculator project helped me learn the basics of JavaScript. It features fundamental operations and user interactions, providing hands-on experience with JavaScript fundamentals, including event handling and DOM manipulation.
 
@@ -60,10 +60,18 @@ Explore more of my work and projects on my [Portfolio](https://darleneportfolio-
 
 ---
 
-## Getting Started
+## License
 
-To clone this repository and view it locally:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```bash
-git clone https://github.com/brooke2384/your-repository.git
-cd your-repository
+---
+
+## Contact
+
+For any questions or feedback, feel free to reach out to me at:
+
+- **Email:** [your-email@example.com](mailto:darlenebridgete4@gmail.com)
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/darlene-b-0b8861236/)
+
+
+
